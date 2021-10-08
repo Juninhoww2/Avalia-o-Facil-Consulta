@@ -1,26 +1,23 @@
 <template>
-  <div id="app">
-    <pagum msg="Sobre o profissional"/>
-  </div>
+
+  <router-view/>
 </template>
 
-<script>
-import pagum from './components/pagum.vue'
-
-export default {
-  name: 'App',
-  components: {
-    pagum
-  }
-}
-</script>
-
 <style>
-@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400&display=swap');
 #app {
-  font-family: 'Comfortaa', cursive;
+  
+}
+
+#nav {
+  padding: 30px;
+}
+
+#nav a {
+  font-weight: bold;
   color: #2c3e50;
-  margin-top: 60px;
-  margin-left: 30px;
+}
+
+#nav a.router-link-exact-active {
+  color: #42b983;
 }
 </style>
